@@ -361,7 +361,6 @@ var viewerTouch_css = "#canvasContainer {top: 0;bottom: 0;}#overlayNavigator {he
 
 function Viewer(b, r) {
 
-/*
     function f() {
         var a, c, d, e, g, f;
         f = "undefined" !== String(typeof ViewerJS_version) ? ViewerJS_version : "From Source";
@@ -390,7 +389,6 @@ function Viewer(b, r) {
             K.style.display = "none"
         })
     }
-*/
 
     function x(a) {
         var b = R.options,
@@ -600,8 +598,7 @@ function Viewer(b, r) {
     };
     (function() {
 
-        //Comment out the function calling the ToolBarRight
-        //f();
+        f();
 
         b && (g.initialize(), document.exitFullscreen || document.cancelFullScreen || document.mozCancelFullScreen || document.webkitExitFullscreen || document.webkitCancelFullScreen || document.msExitFullscreen || (document.getElementById("fullscreen").style.visibility = "hidden", document.getElementById("presentation").style.visibility = "hidden"), p("overlayCloseButton", g.toggleFullScreen), p("fullscreen", g.toggleFullScreen), p("presentation", function() {
             D ||
@@ -820,9 +817,9 @@ function Viewer(b, r) {
                             </div>
                         </div>
                     </div>
-                    <!--Removing the ViewerJS icon-->
-                    <!--<div id = "toolbarRight">-->
-                    <!--</div>-->
+                    <div id = "toolbarRight">
+                    </div>
+
                 </div>
             </div>
             <div id = "canvasContainer">
