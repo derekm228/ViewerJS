@@ -599,7 +599,10 @@ function Viewer(b, r) {
         a(b, !0)
     };
     (function() {
-        f();
+
+        //Comment out the function calling the ToolBarRight
+        //f();
+
         b && (g.initialize(), document.exitFullscreen || document.cancelFullScreen || document.mozCancelFullScreen || document.webkitExitFullscreen || document.webkitCancelFullScreen || document.msExitFullscreen || (document.getElementById("fullscreen").style.visibility = "hidden", document.getElementById("presentation").style.visibility = "hidden"), p("overlayCloseButton", g.toggleFullScreen), p("fullscreen", g.toggleFullScreen), p("presentation", function() {
             D ||
                 g.toggleFullScreen();
